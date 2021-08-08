@@ -1,0 +1,65 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    line-height: 1.4285em;
+    color: rgba(0,0,0,.87);
+    }
+.fullcontainer{width: 100%; height: 95vh; display: flex; align-items: center; justify-content: center;}
+.fluid{width: 100%;}
+label{font-size: .8rem; font-weight: 100;line-height: 2em;}
+input{
+  box-sizing:border-box;
+  margin: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  line-height: 1.21428571em;
+  padding: .67857143em 1em;
+  font-size: .9em;
+  background: #fff;
+  border: 1px solid rgba(34,36,38,.15);
+  color: rgba(0,0,0,.70);
+  border-radius: .28571429rem;
+  }
+  select{
+    line-height: 1.21428571em;
+    padding: .67857143em 1em;
+    font-size: .9em;
+    border: 1px solid rgba(34,36,38,.15);
+    color: rgba(0,0,0,.70);
+    border-radius: .28571429rem;
+    }
+.form{position: relative; max-width: 100%;}
+.shadow-border{border-radius:5px; -webkit-box-shadow:0 1px 2px 0 rgba(34,36,38,.15); box-shadow:0 2px 3px 0 rgba(34,36,38,.15); border-color:rgba(0,0,0,.15);}
+.whiteback{background-color: #fff;}.grayback{background-color: #dadada;}
+.p1{padding: 10px;}.p2{padding: 20px;}.p3{padding: 30px;}
+.mhauto{margin-left: auto; margin-right: auto;}
+.w-20{width: 25vw;}.w-50{width: 50vw;}.w-75{width: 75vw;}.w-100{width: 100vw;}
+.h1{font-size: 2rem;}.h2{font-size: 1.7rem;}.h3{font-size: 1.2rem;}
+.loginh3{font-size: 16px; font-weight: 300; text-align: center;}
+.pb2{padding-bottom: 5px;}
+.psmall{font-size: .8rem;}
+.button-login{
+  background-color: #21ba45;
+  color: #fff;
+  text-shadow: none;
+  background-image: none;
+  display: block;
+  width: 100%;
+  font-size: .85714286rem;
+  cursor: pointer;
+  min-height: 1em;
+  outline: 0;
+  border: none;
+  vertical-align: baseline;
+  margin: 0 .25em 0 0;
+  padding: .78571429em 1.5em .78571429em;
+  text-transform: none;
+  font-weight: 700;
+  line-height: 1em;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  border-radius: .28571429rem;
+  }
