@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>Control de la Produccion</title>
-  <link rel="stylesheet" href="../res/css/main.css">
+  <link rel="stylesheet" href="../res/css/semantic.min.css">
   <link rel="stylesheet" href="../res/css/icon.min.css">
 </head>
-<body class="grayback">
-    <div class="container_top_user">
-    <div class="menu">
-      <div class="item_logo">
-      <img src="../res/img/logo.png" height="25" alt="Logo CCP">
+<body>
+    <div class="contenedor">
+    <div class="ui tiny inverted menu">
+      <div class="item">
+      <img src="../res/img/logo.png" height="18" alt="Logo CCP">
     </div>
     <a class="item" href="first.php" target="iframe_user_content">
       <i class="home icon"></i>&nbsp;&nbsp;Inicio
@@ -32,15 +32,15 @@
     </a>
 
     <div class="right menu">
-      <span class="menu3">
-        <?php  //foreach ($user as $items) {
-          //echo $items["user_name"].'&nbsp;'.$items["last_name"];
-        //} ?>user &nbsp;&nbsp;
+      <span class="item">
+        <?php  foreach ($user as $items) {
+          echo $items["user_name"].'&nbsp;'.$items["last_name"];
+        } ?> 
       </span>
       <a class="item" href="../conf/close.php">
         <i class="cog icon"></i>
       </a>
-      <a class="item" href="../conf/close.php">
+      <a class="item" href="../config/close.php">
         <i class="sign-out icon"></i>
       </a>
   </div>
