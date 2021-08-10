@@ -1,25 +1,28 @@
 <?php include_once '../templates/header.php';?>
-<body class="grayback"><div class="fullcontainer"><div class="w-20 whiteback shadow-border">
-  <form class="form p2" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-    <div class="loginh3 pb2">Acceso al sistema</div>
-    <div>
-      <label>Nombre de usuario</label>
-      <input class="fluid" placeholder="Escriba su nombre de usuario" type="text" name="user">
+<body><p>&nbsp;</p><p>&nbsp;</p>
+  <div class="ui middle aligned center aligned grid"><div class="ui card"><div class="ui raised segment">
+  <form class="ui tiny form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+      <h3 class="ui green image header">Acceso al sistema</h3>
       <br>
-      <label>Contraseña</label>
-      <input class="fluid" placeholder="Escriba su contraseña" type="password" name="password">
-      <br>
-      <label class="fluid">Compañía</label>
-      <select class="ui fluid dropdown" name="company" title="Seleccione su empresa">
+      <div class="field"><div class="ui left icon input">
+        <input placeholder="Escriba su nombre de usuario" type="text" name="user">
+        <i class="user icon"></i>
+      </div></div>
+      <div class="field"><div class="ui left icon input">
+        <input placeholder="Escriba su contraseña" type="password" name="password">
+        <i class="lock icon"></i>
+      </div></div>
+      <div class="field"><div class="ui left icon input">
+      <select class="ui dropdown" name="company" title="Seleccione su empresa">
       <?php foreach ($comp as $valores):
-      echo '<option value="'.$valores["id_conf"].'">'.$valores["company_name"].'</option>';
+      echo '<option value="'.$valores["id_conf"].'">'. "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; " .$valores["company_name"].'</option>';
       endforeach; ?>
       </select>
-        </div>
-        <p class="psmall">Solicitar nueva cuenta de usuario <a href="#">aquí</a></p>
-        <button class="button-login" type="submit">Acceder</button>
-        <!-- BEGIN error box -->
-        <?php echo $errores; ?>
-        <!-- END error box -->
-      </form>
-</div></div></body></html>
+      <i class="industry icon"></i>
+      </div></div>
+      <p>Solicitar nueva cuenta de usuario <a href="#">aquí</a></p>
+      <button class="fluid ui mini green button" type="submit">Acceder</button>
+      <?php echo $errores; ?>
+    </form>
+  </div></div></div>
+</body></html>
