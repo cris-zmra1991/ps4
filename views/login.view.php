@@ -3,7 +3,6 @@
   <div class="ui middle aligned center aligned grid"><div class="ui card"><div class="ui raised segment">
   <form class="ui tiny form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
       <h3 class="ui green image header">Acceso al sistema</h3>
-      <br>
       <div class="field"><div class="ui left icon input">
         <input placeholder="Escriba su nombre de usuario" type="text" name="user">
         <i class="user icon"></i>
